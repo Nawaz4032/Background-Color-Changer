@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>D CODE SHOW</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h4>Background color changer using HTML CSS and JavaScript</h4>
+
+    <!--We have already created html and css-->
+    <ul class="colorList">
+        <li id="brown"></li>
+        <li id="pink"></li>
+        <li id="Yellow"></li>
+        <li id="red"></li>
+        <li id="blue"></li>
+    </ul>
+
+    <script>
+        //will take all li in variable
+        let color = document.querySelectorAll("li");
+
+        //take body tag in variable now
+        let bgcolor = document.querySelector("body");
+
+        //using for each function now.
+        color.forEach(function(selectedcolor) {
+            //using add event listener and arrow function
+            selectedcolor.addEventListener("click", (e) => {
+                //will go to target to select id  
+
+                //will use if condition
+                if (e.target.id == "brown") {
+                    bgcolor.style.background = e.target.id
+                } else if (e.target.id == "pink") {
+                    bgcolor.style.background = e.target.id
+                } else if (e.target.id == "Yellow") {
+                    bgcolor.style.background = e.target.id
+                } else if (e.target.id == "red") {
+                    bgcolor.style.background = e.target.id
+                } else if (e.target.id == "blue") {
+                    bgcolor.style.background = e.target.id
+                }
+
+            })
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
